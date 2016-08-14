@@ -11,12 +11,12 @@ public:
 	virtual void draw();
 	virtual void onCollide(entity* collider);
 	virtual bool damage(int amount, entity* damager);
-	virtual bool push(int x, int y);
+	virtual bool push(double x, double y);
 
 	SDL_Rect entityRect;
 	SDL_Texture* entityTexture;
-	int xVel, yVel;
-	int speed;
+	double xVel, yVel;
+	double speed;
 	~entity();
 
 protected:

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -17,9 +17,14 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="imageService.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="projectile.cpp" />
     <ClCompile Include="render.cpp" />
     <ClCompile Include="resources.cpp" />
     <ClCompile Include="ship.cpp" />
+    <ClCompile Include="shipEntity.cpp" />
+    <ClCompile Include="shipGun.cpp" />
+    <ClCompile Include="shipHardPoint.cpp" />
+    <ClCompile Include="shipInterior.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="counter.h" />
@@ -27,9 +32,14 @@
     <ClInclude Include="entityService.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="imageService.h" />
+    <ClInclude Include="projectile.h" />
     <ClInclude Include="render.h" />
     <ClInclude Include="resources.h" />
     <ClInclude Include="ship.h" />
+    <ClInclude Include="shipEntity.h" />
+    <ClInclude Include="shipGun.h" />
+    <ClInclude Include="shipHardPoint.h" />
+    <ClInclude Include="shipInterior.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{16CDCDF9-AE52-4A7F-9F00-1E783A5C117A}</ProjectGuid>
@@ -39,13 +49,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
